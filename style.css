@@ -105,4 +105,97 @@ body {
   height: 18.75rem; /* 300px */
   border-radius: 12px;
   margin-bottom: 0.5rem; /* 8px - additional space to match figma design */
+  object-fit: cover;
 }
+
+header p {
+  color: var(--stone-600);
+}
+
+.title-margin {
+  margin-bottom: 1.5rem; /* 24px */
+}
+
+.main-title {
+  color: var(--stone-900);
+}
+
+.sub-title-color {
+  color: var(--brown-800);
+}
+
+.line {
+  background-color: var(--stone-150);
+  min-height: 1px;
+  border: 0;
+}
+
+ul, ol {
+  list-style-position: inside;
+  color: var(--stone-600);
+}
+
+li:not(:last-child) {
+  margin-bottom: 0.5rem;
+}
+
+.preparation-section {
+  padding: 1.5rem; /* 24px */
+  background-color: var(--rose-50);
+}
+
+.preparation-title {
+  color: var(--rose-800);
+}
+
+/**** START OF Styles for list on Preparation and Ingredients section ****/
+
+.preparation-list,
+.ingredient-list {
+  list-style: none;
+  padding-left: 0.5rem;
+}
+
+.preparation-list li,
+.ingredient-list li {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.preparation-list li::before,
+.ingredient-list li::before{
+  content: "";
+  width: 4px;
+  height: 4px;
+  background-color: var(--rose-800);
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/**** END OF Styles for list on Preparation and Ingredients section ****/
+
+/**** START OF Styles for list on Instruction section ****/
+.instruction-list {
+  list-style: none;
+  padding-left: 0.5rem;
+  counter-reset: step;
+}
+
+.instruction-list li {
+  position: relative;
+  padding-left: 2rem;
+}
+
+.instruction-list li::before {
+  counter-increment: step;
+  content: counter(step) ".";
+  position: absolute;
+  left: 0;
+  top: 0.2em;
+  font-weight: 600;
+  color: var(--brown-800);
+}
+/**** END OF Styles for list on Instruction section ****/ 
