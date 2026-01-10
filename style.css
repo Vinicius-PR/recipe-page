@@ -83,3 +83,26 @@
   font-weight: 700;
   line-height: 1.5;
 }
+
+body {
+  background-color: var(--stone-100);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* 32px */
+
+  max-width: 46rem; /* 736px */
+  margin: 8rem auto;
+  padding: 2.5rem; /* 40px */
+
+  background-color: var(--white);
+  border-radius: 24px;
+}
+
+.recipe_img {
+  height: 18.75rem; /* 300px */
+  border-radius: 12px;
+  margin-bottom: 0.5rem; /* 8px - additional space to match figma design */
+}
