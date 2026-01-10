@@ -24,4 +24,62 @@
   --spacing-200: 1rem;    /* 16px */
   --spacing-150: 0.75rem; /* 12px */
   --spacing-100: 0.5rem;  /* 8px */
-  }
+}
+
+/* Font Young Serif */
+@font-face {
+  font-family: "Young Serif";
+  src: url("/assets/fonts/young-serif/YoungSerif-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Font Outfit - Variable Font */
+@font-face {
+  font-family: "Outfit";
+  src: url("/assets/fonts/outfit/Outfit-VariableFont_wght.ttf");
+  font-weight: 100 900; /* important for variable fonts */
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Young Serif Regular 40px */
+.text-preset-1 {
+  font-family: "Young Serif", serif;
+  font-size: 2.5rem; /* 40px */
+  font-weight: 400;
+  line-height: 1;
+}
+
+/* Young Serif Regular 28px */
+.text-preset-2 {
+  font-family: "Young Serif", serif;
+  font-size: 1.75rem; /* 28px */
+  font-weight: 400;
+  line-height: 1;
+}
+
+/* Oufit SemiBold */
+.text-preset-3 {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.25rem; /* 20px */
+  font-weight: 600;
+  line-height: 1;
+}
+
+/* Oufit Regular */
+.text-preset-4 {
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem; /* 16px */
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* Oufit Bold */
+.text-preset-4-bold {
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem; /* 16px */
+  font-weight: 700;
+  line-height: 1.5;
+}
