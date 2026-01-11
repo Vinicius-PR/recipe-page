@@ -153,6 +153,7 @@ li:not(:last-child) {
 }
 
 .preparation-title {
+  margin-bottom: var(--spacing-200);
   color: var(--rose-800);
 }
 
